@@ -1,10 +1,14 @@
 import { RecoilRoot } from 'recoil'
-import ChracterCounter from './ChractorCounter'
+import ChracterCounter from './components/ChractorCounter'
+import FontButton from './components/FontButton'
+import Text from './components/Text'
 
 function App() {
   return (
     <RecoilRoot>
       <ChracterCounter />
+      <FontButton />
+      <Text />
     </RecoilRoot>
   )
 }

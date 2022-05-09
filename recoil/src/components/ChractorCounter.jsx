@@ -1,4 +1,5 @@
-import {atom, useRecoilState, selector, useRecoilValue}from 'recoil'
+import {useRecoilState, selector, useRecoilValue}from 'recoil'
+import {textState} from '../recoil/atom'
 
 function ChracterCounter(){
     return (
@@ -8,11 +9,6 @@ function ChracterCounter(){
         </div>
     )
 }
-
-const textState = atom({
-    key: 'textState',
-    default: ''
-})
 
 function TextInput(){
     const [text, setText] = useRecoilState(textState)

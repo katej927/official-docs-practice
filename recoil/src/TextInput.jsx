@@ -1,10 +1,5 @@
 import {atom, useRecoilState, selector, useRecoilValue}from 'recoil'
-
-
-const textState = atom({
-    key: 'textState',
-    default: ''
-})
+import textState from './recoil/textState'
 
 export default function TextInput(){
     const [text, setText] = useRecoilState(textState)
